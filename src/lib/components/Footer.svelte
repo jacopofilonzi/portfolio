@@ -1,5 +1,5 @@
 <div id="footer" class="p-3 text-center">
-    <p>Created with <img src="https://svelte.dev/favicon.png" alt="" height="25px"> <a href="https://svelte.dev" target="_blank">Svelte</a> and <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="" height="25px"> <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
+    <p><span class="brand-title" style="color: var(--color-dark-text)">F</span> • Created with <img src="https://svelte.dev/favicon.png" alt="" height="25px"> <a href="https://svelte.dev" target="_blank">Svelte</a> and <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="" height="25px"> <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
 </div>
 <style>
     p {

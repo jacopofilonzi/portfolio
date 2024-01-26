@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/* font-family: 'Lilita One', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+
 :root {
     /* Color palette */
         /* Dark */
@@ -18,6 +24,11 @@
 
 }
 
+.brand-title {
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Lilita One', sans-serif; */
+
+}
 
 
 html[data-theme="light"] body, body {

@@ -8,7 +8,7 @@
 </script>
 
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark px-3 m-3">
-	<a class="navbar-brand" href="#">Filonzi</a>
+	<a class="navbar-brand brand-title" href="#">Filonzi</a>
 	<button
 		class="navbar-toggler"
 		type="button"
