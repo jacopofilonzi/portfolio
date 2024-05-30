@@ -1,21 +1,18 @@
-<div id="footer" class="p-3 text-center">
-    <p><span class="brand-title" style="color: var(--color-dark-text)">F</span> • Created with <img src="https://svelte.dev/favicon.png" alt="" height="25px"> <a href="https://svelte.dev" target="_blank">Svelte</a> and <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="" height="25px"> <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
-</div>
-<style>
-    p {
-        margin: 0;
-    }
-    #footer {
-        background-color: var(--color-dark-secondary);
-        widows: 100vw;
-        /* height: 50px; */
-        box-shadow: var(--shadow-basic);
-        /* border-radius: 8px; */
-    }
-    #footer p {
-        color: rgba(255, 255, 255, 0.55);
-    }
-    #footer a {
-        
-}
-</style>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <span class="mb-3 mb-md-0">&lt;</span>
+            <span class="mb-3 mb-md-0 kanit-regular">Filonzi Jacopo</span>
+            •
+            <span class="mb-3 mb-md-0">Made using <a href="https://svelte.dev" target="_blank">Svelte</a>.</span>
+            <span class="mb-3 mb-md-0">/&gt;</span>
+        </a>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/jacopofilonzi/portfolio"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="/"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+    </footer>
+  </div>

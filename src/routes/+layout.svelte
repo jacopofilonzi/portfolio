@@ -1,45 +1,55 @@
 <script>
-    // components
-    import Navbar from '../lib/components/Navbar.svelte'
-    import Footer from '../lib/components/Footer.svelte'
-    
-    // scripts
+    import { onMount } from "svelte";
+
+
+    // CSS
+    import "bootstrap/dist/css/bootstrap.min.css";
+	import "bootstrap-icons/font/bootstrap-icons.css";
+    import "$lib/styles/global/global.css";
+
+    // Components
+	import Header from "$lib/components/Header.svelte";
+	import Footer from "$lib/components/Footer.svelte";
+
+    // After
+    onMount(() => {
+
+        // Bootstrap JS
+			// @ts-ignore
+        import("bootstrap/dist/js/bootstrap.bundle.js");
+        
+    });
 
 </script>
 
-<!-- <Navbar />
-<slot/>
-<Footer /> -->
+<div class="app">
 
-<div id="main">
-    <div id="nav">
-        <Navbar />
-    </div>
-    <div id="content" class="mx-3">
-        <slot/>
-    </div>
-    <div id="footer">
-        <Footer />
-    </div>
+    <Header />
+
+    <main class="container">
+		<slot />
+	</main>
+
+	<Footer />
 </div>
+
 
 <style>
 
-#main {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
+    .app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		/* max-height: 100vh; */
+	}
 
-    #nav, #footer {
-        /* background-color: red; */
-    }
-
-    #content {
-        flex-grow: 1;
-        overflow: auto;
-        /* margin: 0 auto; */
-        /* padding-inline: 5vw; */
-    }
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
 
 </style>
