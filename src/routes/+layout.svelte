@@ -3,14 +3,17 @@
 
 
     // CSS
+        // Bootstrap
     import "bootstrap/dist/css/bootstrap.min.css";
 	import "bootstrap-icons/font/bootstrap-icons.css";
-    import "$lib/styles/global/global.css";
+        // Custom
+    import "$lib/Style/MainLayout.css";
 
     // Components
-	import Header from "$lib/components/Header.svelte";
-	import Footer from "$lib/components/Footer.svelte";
-
+	import Header from "$lib/components/Header/Header.svelte";
+	import Footer from "$lib/components/Footer/Footer.svelte";
+    
+    
     // After
     onMount(() => {
 
@@ -20,29 +23,24 @@
         
     });
 
+
+
 </script>
 
-<div class="app">
 
+<div id="app">
+    
     <Header />
+    
+    <main class="container pt-5">
+        <slot />
+    </main>
+    
+    <Footer />
 
-    <main class="container">
-		<slot />
-	</main>
-
-	<Footer />
 </div>
 
-
 <style>
-
-    .app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		/* max-height: 100vh; */
-	}
-
 	main {
 		flex: 1;
 		display: flex;
