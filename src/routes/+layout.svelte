@@ -15,13 +15,13 @@
     
     
     // After
-    onMount(() => {
+    // onMount(() => {
 
-        // Bootstrap JS
-			// @ts-ignore
-        import("bootstrap/dist/js/bootstrap.bundle.js");
+    //     // Bootstrap JS
+	// 		// @ts-ignore
+    //     import("bootstrap/dist/js/bootstrap.bundle.js");
         
-    });
+    // });
 
 
 

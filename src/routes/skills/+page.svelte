@@ -38,7 +38,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="text-column">
+<div class="text-column mb-5 pb-5">
 	<h1 class="text-center kanit-black">Skills developed over the years</h1>
 
     {#each SkillMerge as MergeItem}
@@ -108,6 +108,9 @@
 
     .skillCard {
         transition: 200ms;
+        animation: fadeIn linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
     }
 
     .skillCard:hover {
@@ -117,5 +120,17 @@
 
     .skillCard > .inner {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            scale: 0.5;
+            transform: translatey(-100px);
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
     }
 </style>
